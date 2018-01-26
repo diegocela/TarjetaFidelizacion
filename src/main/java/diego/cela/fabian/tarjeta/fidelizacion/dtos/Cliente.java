@@ -1,12 +1,25 @@
 package diego.cela.fabian.tarjeta.fidelizacion.dtos;
 
-public class Cliente {
-
-	private String login;
-	
-	private String password;
+public class Cliente extends Usuario {
 	
 	private String nombre;
 	
 	private String apellidos;
+	
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public String getApellidos() {
+		return apellidos;
+	}
+
+	public void setApellidos(String apellidos) {
+		this.apellidos = apellidos;
+	}	
+	
 }

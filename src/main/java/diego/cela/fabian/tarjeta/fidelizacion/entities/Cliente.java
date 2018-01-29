@@ -4,8 +4,11 @@ public class Cliente extends Usuario {
 
 	private String apellidos;
 	
-	private int puntos;
-	
+	public Cliente() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
 	public String getApellidos() {
 		return apellidos;
 	}
@@ -13,12 +16,11 @@ public class Cliente extends Usuario {
 	public void setApellidos(String apellidos) {
 		this.apellidos = apellidos;
 	}
-
-	public int getPuntos() {
-		return puntos;
+	
+	@Override
+	public String toString() {
+		return "Cliente [apellidos=" + apellidos + ", login=" + login + ", password=" + password + ", nombre=" + nombre
+				+ "]";
 	}
 
-	public void setPuntos(int puntos) {
-		this.puntos = puntos;
-	}
 }

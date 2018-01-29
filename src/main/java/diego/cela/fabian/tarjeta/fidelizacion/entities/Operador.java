@@ -1,15 +1,13 @@
 package diego.cela.fabian.tarjeta.fidelizacion.entities;
 
-public class Operador extends Cliente {
+public class Operador extends Usuario {
 
 	private String cif;
 	
-	private String web;
-	
-	private int factorConversion;
-	
-	private int idTipo;
-	
+	public Operador() {
+		super();
+	}
+
 	public String getCif() {
 		return cif;
 	}
@@ -17,28 +15,10 @@ public class Operador extends Cliente {
 	public void setCif(String cif) {
 		this.cif = cif;
 	}
-
-	public String getWeb() {
-		return web;
+	
+	@Override
+	public String toString() {
+		return "Operador [cif=" + cif + ", login=" + login + ", password=" + password + ", nombre=" + nombre + "]";
 	}
 
-	public void setWeb(String web) {
-		this.web = web;
-	}
-
-	public int getFactorConversion() {
-		return factorConversion;
-	}
-
-	public void setFactorConversion(int factorConversion) {
-		this.factorConversion = factorConversion;
-	}
-
-	public int getIdTipo() {
-		return idTipo;
-	}
-
-	public void setIdTipo(int idTipo) {
-		this.idTipo = idTipo;
-	}
 }

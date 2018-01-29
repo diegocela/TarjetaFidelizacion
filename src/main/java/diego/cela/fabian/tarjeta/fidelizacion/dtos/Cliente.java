@@ -2,16 +2,11 @@ package diego.cela.fabian.tarjeta.fidelizacion.dtos;
 
 public class Cliente extends Usuario {
 	
-	private String nombre;
-	
 	private String apellidos;
 	
-	public String getNombre() {
-		return nombre;
-	}
-
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
+	public Cliente() {
+		super();
+		// TODO Auto-generated constructor stub
 	}
 
 	public String getApellidos() {
@@ -20,6 +15,12 @@ public class Cliente extends Usuario {
 
 	public void setApellidos(String apellidos) {
 		this.apellidos = apellidos;
-	}	
+	}
+
+	@Override
+	public String toString() {
+		return "Cliente [apellidos=" + apellidos + ", username=" + username + ", password=" + password + ", nombre="
+				+ nombre + "]";
+	}
 	
 }
